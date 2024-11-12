@@ -1,0 +1,21 @@
+/* Style général pour le corps de la page */
+body {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 100vh; /* Utilise 100% de la hauteur de la fenêtre */
+    margin: 0; /* Supprime les marges par défaut */
+    font-family: Arial, sans-serif;
+    background-color: #afa0a0e5; /* Arrière-plan gris léger */
+}
+
+/* Style pour le conteneur du contenu */
+#contenu {
+    width: 80%; /* Largeur du contenu */
+    max-width: 600px; /* Limite de largeur */
+    text-align: center; /* Centre le texte à l'intérieur */
+    padding: 20px;
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ombre pour un effet esthétique */
+    background-color: #a1f0faa4; /* Arrière-plan blanc pour le conteneur principal */
+}

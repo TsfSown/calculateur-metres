@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de Matériaux</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="contenu">
+        <h1>Calculateur de Matériaux</h1>
+        <p>Bienvenue sur notre calculateur de matériaux de construction ! Entrez les dimensions de votre projet pour estimer les quantités nécessaires.</p>
+
+        <!-- Formulaire pour les dimensions des fondations -->
+        <h2>Calcul des Fondations</h2>
+        <label for="longueur">Longueur (m) :</label>
+        <input type="number" id="longueur" step="0.1" required><br>
+        <label for="largeur">Largeur (m) :</label>
+        <input type="number" id="largeur" step="0.1" required><br>
+        <label for="hauteur">Hauteur (m) :</label>
+        <input type="number" id="hauteur" step="0.1" required><br>
+        <button onclick="calculerFondations()">Calculer les fondations</button>
+
+        <!-- Formulaire pour les dimensions du soubassement -->
+        <h2>Calcul du Soubassement</h2>
+        <label for="longueurSoubassement">Longueur (m) :</label>
+        <input type="number" id="longueurSoubassement" step="0.1" required><br>
+        <label for="largeurSoubassement">Largeur (m) :</label>
+        <input type="number" id="largeurSoubassement" step="0.1" required><br>
+        <label for="hauteurSoubassement">Hauteur (m) :</label>
+        <input type="number" id="hauteurSoubassement" step="0.1" required><br>
+        <button onclick="calculerSoubassement()">Calculer le soubassement</button>
+
+        <!-- Formulaire pour les dimensions des murs avec périmètre -->
+        <h2>Calcul des Murs</h2>
+        <label for="longueurMaison">Longueur de la maison (m) :</label>
+        <input type="number" id="longueurMaison" step="0.1" required><br>
+        <label for="largeurMaison">Largeur de la maison (m) :</label>
+        <input type="number" id="largeurMaison" step="0.1" required><br>
+        <label for="hauteurMur">Hauteur des murs (m) :</label>
+        <input type="number" id="hauteurMur" step="0.1" required><br>
+        
+        <!-- Champ pour le prix unitaire du parpaing -->
+        <h2>Coût des Parpaings</h2>
+        <label for="prixParpaing">Prix unitaire d'un parpaing (€) :</label>
+        <input type="number" id="prixParpaing" step="0.01" required><br>
+        
+        <button onclick="calculerMurs()">Calculer les murs</button>
+
+        <!-- Affichage des résultats -->
+        <h2>Résultats</h2>
+        <pre id="resultats"></pre>
+    </div>
+
+    <!-- Inclure le fichier JavaScript -->
+    <script src="calculateur.js"></script>
+</body>
+</html>
